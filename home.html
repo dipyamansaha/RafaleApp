@@ -1,0 +1,30 @@
+<!-- Rafale App - Dipyaman Saha -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="myflight.css" />
+    <script
+      type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry"
+    ></script>
+    <script src="myflight.js"></script>
+  </head>
+  <body>
+    <div class="controls">
+      <select id="s_from" onChange="go();">
+        <option value="paris">Paris (France)</option>
+        <option value="ambala">Ambala (India)</option>
+      </select>
+      to
+      <select id="s_to" onChange="go();">
+        <option value="paris">Paris (France)</option>
+        <option value="ambala">Ambala (India)</option>
+      </select>
+    </div>
+    <div id="mapCanvas" class="map"></div>
+    <script type="text/javascript">
+      loadMap();
+    </script>
+  </body>
+</html>
